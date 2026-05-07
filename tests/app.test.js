@@ -9,9 +9,7 @@ const {
   calculateTotal,
 } = require("../index");
 
-// ─────────────────────────────────────────────
-// Unit tests — fonctions helpers (couverture branches)
-// ─────────────────────────────────────────────
+
 
 describe("applySeason", () => {
   test("Haute saison → ×1.5", () => {
