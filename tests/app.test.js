@@ -38,6 +38,7 @@ describe("applyLongStay", () => {
   });
 });
 
+
 describe("applySeaView", () => {
   test("vue mer → +30 par nuit", () => {
     expect(applySeaView(200, true, 3)).toBe(290);
@@ -47,6 +48,8 @@ describe("applySeaView", () => {
   });
 });
 
+
+
 describe("applyBreakfast", () => {
   test("client Normal → +15 par personne par nuit", () => {
     expect(applyBreakfast(200, "Normal", 2, 2)).toBe(260);
@@ -55,6 +58,7 @@ describe("applyBreakfast", () => {
     expect(applyBreakfast(200, "VIP", 2, 2)).toBe(200);
   });
 });
+
 
 describe("calculateTotal", () => {
   test("calcul complet avec tous les modificateurs", () => {
